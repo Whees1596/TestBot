@@ -1,7 +1,7 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-async def registration_kb() -> InlineKeyboardMarkup:
+async def subscribe_kb() -> InlineKeyboardMarkup:
     keyboard: InlineKeyboardMarkup = InlineKeyboardMarkup(
         inline_keyboard=[
             [
@@ -13,3 +13,15 @@ async def registration_kb() -> InlineKeyboardMarkup:
         ]
     )
     return keyboard
+
+
+async def registration_kb() -> InlineKeyboardMarkup:
+    keyboard: InlineKeyboardMarkup = InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text='Зарегистрироваться!', callback_data='registrDone')
+            ]
+        ]
+    )
+    return keyboard
+
