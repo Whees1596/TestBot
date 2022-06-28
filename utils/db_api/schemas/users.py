@@ -8,5 +8,6 @@ class User(TimedBaseModel):
     user_id = Column(BigInteger, unique=True, nullable=False)
     name = Column(String(100))
     referal_id = Column(BigInteger)
+    balance = Column(BigInteger)
 
     query: sql.Select
