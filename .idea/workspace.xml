@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e9a06c4-a9e1-4a0a-8338-0b0d679a5f6b" name="Changes" comment="Добавлен каталог товара, навигация в каталоге, добавление товара через админку.">
-      <change afterPath="$PROJECT_DIR$/keyboards/inline/support_inline_kb.py" afterDir="false" />
+    <list default="true" id="2e9a06c4-a9e1-4a0a-8338-0b0d679a5f6b" name="Changes" comment="Добавлена кнопка поддержка">
+      <change afterPath="$PROJECT_DIR$/handlers/users/basket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/states/add_item_in_basket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/db_api/schemas/basket.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/admins/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/admins/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/inline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/states/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/db_api/quick_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_api/quick_commands.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/TgBots/TestBot"
+    "last_opened_file_path": "D:/TgBots/TestoviyBot"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -121,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656461523207</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлена кнопка поддержка">
+      <created>1656519770403</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656519770404</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +151,7 @@
     <MESSAGE value="Сделана проверка на подписку и регистрация в боте." />
     <MESSAGE value="Добавлена реферальная система с баллами." />
     <MESSAGE value="Добавлен каталог товара, навигация в каталоге, добавление товара через админку." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен каталог товара, навигация в каталоге, добавление товара через админку." />
+    <MESSAGE value="Добавлена кнопка поддержка" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена кнопка поддержка" />
   </component>
 </project>

@@ -4,6 +4,7 @@ from sqlalchemy import and_
 
 from utils.db_api.schemas.users import User
 from utils.db_api.schemas.catalog import Catalog
+from utils.db_api.schemas.basket import Basket
 from utils.db_api.db_gino import db
 
 
@@ -75,3 +76,25 @@ async def add_item(category_name: str, subcategory_name: str, category_code: str
 
     except UniqueViolationError:
         pass
+
+
+async def show_user_basket(user_id: int) -> List[Basket]:
+    basket = await Basket.query.where(Basket.user_id == user_id).gino.all()
+    return basket
+
+
+async def create_user_basket(user_id: int, item_id: int):
+    try:
+        basket = Basket(user_id=user_id, item_id=item_id)
+        await basket.create()
+
+    except UniqueViolationError:
+        pass
+
+
+async def get_items_basket(item_id: int) -> List[Catalog]:
+    items = await Catalog.query.where(
+        and_(Catalog.id_item == item_id)
+    ).gino.all()
+
+    return items
