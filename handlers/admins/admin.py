@@ -106,7 +106,7 @@ async def select_sub_category_clothes(callback: types.CallbackQuery, state: FSMC
 
 
     # Подкатегории для категории "Обувь"
-@dp.callback_query_handler(lambda callback: "sneakers" or "low_sneakers" or "flops"
+@dp.callback_query_handler(lambda callback: "sneakers" or "low_sneakers" or "flip-flops"
                                             or "off_shoes" or "boots" in callback.data,
                            state=FSMadmin.subcategory_name)
 async def select_sub_category_shoes(callback: types.CallbackQuery, state: FSMContext):
@@ -116,7 +116,7 @@ async def select_sub_category_shoes(callback: types.CallbackQuery, state: FSMCon
                 data['subcategory_name'] = "Кроссовки"
             elif callback.data == "low_sneakers":
                 data['subcategory_name'] = "Кеды"
-            elif callback.data == "flops":
+            elif callback.data == "flip-flops":
                 data['subcategory_name'] = "Шлепанцы"
             elif callback.data == "off_shoes":
                 data['subcategory_name'] = "Туфли"
@@ -137,7 +137,7 @@ async def select_sub_category_bags(callback: types.CallbackQuery, state: FSMCont
                 data['subcategory_name'] = "Рюкзаки"
             elif callback.data == "sub_bags":
                 data['subcategory_name'] = "Сумки"
-            elif callback.data == "bananas":
+            elif callback.data == '"bananas"':
                 data['subcategory_name'] = "Бананки"
         await FSMadmin.next()
         await callback.message.answer('Введи code категории:')
@@ -230,6 +230,7 @@ async def select_count(message: types.Message, state: FSMContext):
 
         res = data.values()
         r = list(res)
+        print(r)
         category_name = r[0]
         subcategory_name = r[1]
         category_code = r[2]
