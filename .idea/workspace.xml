@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e9a06c4-a9e1-4a0a-8338-0b0d679a5f6b" name="Changes" comment="Сделана проверка на подписку и регистрация в боте.">
-      <change afterPath="$PROJECT_DIR$/handlers/users/support.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/users/user_profile.py" afterDir="false" />
+    <list default="true" id="2e9a06c4-a9e1-4a0a-8338-0b0d679a5f6b" name="Changes" comment="Добавлена реферальная система с баллами.">
+      <change afterPath="$PROJECT_DIR$/handlers/admins/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/admins/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/users/catalog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keyboards/default/admin_kb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keyboards/inline/admin_add_product_inline_kb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keyboards/inline/catalog_inline_kb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/states/states_admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/db_api/schemas/catalog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/users/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/default/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/default/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/inline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/states/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/db_api/quick_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_api/quick_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/db_api/schemas/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_api/schemas/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +49,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/TgBots/TestBot/utils/db_api"
+    "last_opened_file_path": "D:/TgBots/TestBot/keyboards/inline"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TgBots\TestBot\keyboards\inline" />
+      <recent name="D:\TgBots\TestBot\keyboards\default" />
+      <recent name="D:\TgBots\TestBot\states" />
+      <recent name="D:\TgBots\TestBot\handlers\admins" />
       <recent name="D:\TgBots\TestBot\utils\db_api" />
-      <recent name="D:\TgBots\TestBot" />
-      <recent name="D:\TgBots\TestBot\venv" />
     </key>
   </component>
   <component name="RunManager">
@@ -109,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656362656338</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавлена реферальная система с баллами.">
+      <created>1656380806741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656380806741</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="..." />
     <MESSAGE value="Сделана проверка на подписку и регистрация в боте." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделана проверка на подписку и регистрация в боте." />
+    <MESSAGE value="Добавлена реферальная система с баллами." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена реферальная система с баллами." />
   </component>
 </project>

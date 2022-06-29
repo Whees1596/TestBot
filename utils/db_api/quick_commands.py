@@ -1,6 +1,9 @@
+from typing import List
 from asyncpg import UniqueViolationError
+from sqlalchemy import and_
 
 from utils.db_api.schemas.users import User
+from utils.db_api.schemas.catalog import Catalog
 from utils.db_api.db_gino import db
 
 
@@ -26,3 +29,49 @@ async def count_refferals(user_id: int):
 async def change_user_balance(user_id: int, balance: int):
     user = await User.query.where(User.user_id == user_id).gino.first()
     await user.update(balance=balance).apply()
+
+
+async def get_item(item_id):
+    item = await Catalog.query.where(Catalog.id_item == item_id).gino.first()
+    return item
+
+
+async def get_items(category_code, subcategory_code) -> List[Catalog]:
+    items = await Catalog.query.where(
+        and_(Catalog.category_code == category_code, Catalog.subcategory_code == subcategory_code)
+    ).gino.all()
+
+    return items
+
+
+async def get_categories() -> List[Catalog]:
+    return await Catalog.query.distinct(Catalog.category_code).gino.all()
+
+
+async def get_subcategories(category) -> List[Catalog]:
+    return await Catalog.query.distinct(Catalog.subcategory_code).where(Catalog.category_code == category).gino.all()
+
+
+async def count_items(category_code, subcategory_code=None):
+    conditions = [Catalog.category_code == category_code]
+
+    if subcategory_code:
+        conditions.append(Catalog.subcategory_code == subcategory_code)
+
+    total = await db.select([db.func.count()]).where(
+        and_(*conditions)
+    ).gino.scalar()
+
+    return total
+
+
+async def add_item(category_name: str, subcategory_name: str, category_code: str, subcategory_code: str,
+                   name: str, photo_id: str, description: str, price: int, count: int):
+    try:
+        item = Catalog(category_name=category_name, subcategory_name=subcategory_name, category_code=category_code,
+                       subcategory_code=subcategory_code, name=name, photo_id=photo_id,
+                       description=description, price=price, count=count)
+        await item.create()
+
+    except UniqueViolationError:
+        pass

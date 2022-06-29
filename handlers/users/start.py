@@ -66,7 +66,7 @@ async def sub_done(call: types.CallbackQuery):
 @dp.callback_query_handler(text='registrDone')
 async def registr_done(call: types.CallbackQuery):
     await bot.delete_message(call.from_user.id, call.message.message_id)
-    if REFFERER_ID is not None:
+    if len(REFFERER_ID) != 0:
         if REFFERER_ID[0] != call.from_user.id:
             await commands.add_user(user_id=call.from_user.id, name=call.from_user.full_name, referal_id=REFFERER_ID[0])
             await call.message.answer(f'{call.from_user.full_name}, регистрация прошла успешно!\n\n'
