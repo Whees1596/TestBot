@@ -83,9 +83,9 @@ async def show_user_basket(user_id: int) -> List[Basket]:
     return basket
 
 
-async def create_user_basket(user_id: int, item_id: int):
+async def create_user_basket(user_id: int, item_id: int, item_price: float):
     try:
-        basket = Basket(user_id=user_id, item_id=item_id)
+        basket = Basket(user_id=user_id, item_id=item_id, item_price=item_price)
         await basket.create()
 
     except UniqueViolationError:
@@ -98,3 +98,7 @@ async def get_items_basket(item_id: int) -> List[Catalog]:
     ).gino.all()
 
     return items
+
+
+async def delete_user_basket(user_id: int):
+    await Basket.delete.where(Basket.user_id == user_id).gino.status()

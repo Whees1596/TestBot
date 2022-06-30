@@ -2,7 +2,7 @@ from typing import Union
 from aiogram import types
 from aiogram.types import InputMedia
 from keyboards.inline.catalog_inline_kb import categories_kb, subcategories_kb, items_kb, item_kb, menu_cd
-from loader import dp
+from loader import dp, bot
 from utils.db_api.quick_commands import get_item
 
 
@@ -62,6 +62,11 @@ async def show_item(callback: types.CallbackQuery, category, subcategory, item_i
                                                         f'<b>Наличие:</b> {item.count} шт.\n\n'
                                                         f'<b>Цена:</b> {item.price} руб.\n\n')
     await callback.message.edit_media(file, reply_markup=markup)
+
+
+@dp.callback_query_handler(lambda call: "gotocatalog" in call.data)
+async def go_to_catalog(call: types.CallbackQuery):
+    await show_catalog(call.message)
 
 
 @dp.callback_query_handler(menu_cd.filter())

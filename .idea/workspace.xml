@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e9a06c4-a9e1-4a0a-8338-0b0d679a5f6b" name="Changes" comment="Добавлена кнопка поддержка">
-      <change afterPath="$PROJECT_DIR$/handlers/users/basket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/states/add_item_in_basket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/db_api/schemas/basket.py" afterDir="false" />
+    <list default="true" id="2e9a06c4-a9e1-4a0a-8338-0b0d679a5f6b" name="Changes" comment="///">
+      <change afterPath="$PROJECT_DIR$/handlers/payments/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/payments/pay_basket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keyboards/inline/basket_inline_kb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/basket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/catalog.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/catalog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/inline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/states/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/states/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/states/add_item_in_basket.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/db_api/quick_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_api/quick_commands.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,14 +41,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/TgBots/TestoviyBot"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/TgBots/TestoviyBot&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\TgBots\TestBot\keyboards\inline" />
