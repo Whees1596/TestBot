@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e9a06c4-a9e1-4a0a-8338-0b0d679a5f6b" name="Changes" comment="///">
-      <change afterPath="$PROJECT_DIR$/handlers/payments/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/payments/pay_basket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/inline/basket_inline_kb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/users/history_payments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keyboards/inline/pay_inline_kb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/db_api/schemas/payments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/basket.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/catalog.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/catalog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/payments/pay_basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/payments/pay_basket.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/support.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keyboards/inline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/states/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/states/add_item_in_basket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboards/inline/basket_inline_kb.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/basket_inline_kb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/db_api/quick_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_api/quick_commands.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,14 +38,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/TgBots/TestoviyBot&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/TgBots/TestoviyBot/handlers/admin/admin.py"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\TgBots\TestBot\keyboards\inline" />
@@ -58,7 +55,28 @@
       <recent name="D:\TgBots\TestBot\utils\db_api" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="фыв" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TestBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keyboards/inline" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keyboards/inline/фыв.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TestBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,9 +98,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TestBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/handlers/admins" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handlers/admins/ss.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.фыв" />
+        <item itemvalue="Python.ss" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656519770404</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="///">
+      <created>1656610534619</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656610534620</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +205,7 @@
     <MESSAGE value="Добавлена реферальная система с баллами." />
     <MESSAGE value="Добавлен каталог товара, навигация в каталоге, добавление товара через админку." />
     <MESSAGE value="Добавлена кнопка поддержка" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена кнопка поддержка" />
+    <MESSAGE value="///" />
+    <option name="LAST_COMMIT_MESSAGE" value="///" />
   </component>
 </project>

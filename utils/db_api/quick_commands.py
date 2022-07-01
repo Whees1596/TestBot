@@ -5,6 +5,7 @@ from sqlalchemy import and_
 from utils.db_api.schemas.users import User
 from utils.db_api.schemas.catalog import Catalog
 from utils.db_api.schemas.basket import Basket
+from utils.db_api.schemas.payments import Payments
 from utils.db_api.db_gino import db
 
 
@@ -100,5 +101,38 @@ async def get_items_basket(item_id: int) -> List[Catalog]:
     return items
 
 
+async def count_items_id_basket(user_id: int, item_id: int):
+    count = await db.select([db.func.count(Basket.user_id)]).where(
+        and_(Basket.item_id == item_id, Basket.user_id == user_id)).gino.scalar()
+    return count
+
+
 async def delete_user_basket(user_id: int):
     await Basket.delete.where(Basket.user_id == user_id).gino.status()
+
+
+async def add_payment(unique_id: str, user_id: int, username: str, amount: float, status: str, bonus: float,
+                      items_id: str):
+    item = Payments(unique_id=unique_id, user_id=user_id, username=username, amount=amount, status=status, bonus=bonus,
+                    items_id=items_id)
+    await item.create()
+
+
+async def change_status_payment(id_payments: int, status: str):
+    user = await Payments.query.where(Payments.id == id_payments).gino.first()
+    await user.update(status=status).apply()
+
+
+async def get_payment_unique(unique_id: str):
+    payment = await Payments.query.where(Payments.unique_id == unique_id).gino.first()
+    return payment
+
+
+async def get_payment(id_payments: int):
+    payment = await Payments.query.where(Payments.id == id_payments).gino.first()
+    return payment
+
+
+async def get_all_history_payment_user(user_id: int) -> List[Payments]:
+    payments = await Payments.query.where(Payments.user_id == user_id).gino.all()
+    return payments
